@@ -1,0 +1,121 @@
+libtranslate
+--------------------------------------------
+libtranslate is a library for translating text and web pages between
+natural languages. Its modular infrastructure allows to implement new
+translation services separately from the core library.
+
+Runtime requirements:
+  cygwin-1.5.23-2
+  glib2-2.12.7-1
+  libintl8-0.15-1
+  libsoup22_8-2.2.99-1
+  libtalkfilters1-2.3.6-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.23-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://www.nongnu.org/libtranslate/
+
+Canonical download:
+  http://savannah.nongnu.org/download/libtranslate/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libtranslate-0.99-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libtranslate-0.99-X.cygport all
+
+This will create:
+  /usr/src/libtranslate-0.99-X-src.tar.bz2
+  /usr/src/libtranslate-0.99-X.tar.bz2
+  /usr/src/libtranslate-devel-0.99-X.tar.bz2
+  /usr/src/libtranslate-doc-0.99-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libtranslate)
+  /usr/bin/cygtranslate-0.dll
+  /usr/bin/translate.exe
+  /usr/lib/libtranslate/modules/generic.dll
+  /usr/lib/libtranslate/modules/generic.la
+  /usr/lib/libtranslate/modules/talkfilters.dll
+  /usr/lib/libtranslate/modules/talkfilters.la
+  /usr/share/doc/Cygwin/libtranslate-0.99.README
+  /usr/share/doc/libtranslate-0.99/AUTHORS
+  /usr/share/doc/libtranslate-0.99/COPYING
+  /usr/share/doc/libtranslate-0.99/INSTALL
+  /usr/share/doc/libtranslate-0.99/NEWS
+  /usr/share/doc/libtranslate-0.99/README
+  /usr/share/doc/libtranslate-0.99/TODO
+  /usr/share/libtranslate/services.dtd
+  /usr/share/libtranslate/services.xml
+  /usr/share/locale/fr/LC_MESSAGES/libtranslate.mo
+  /usr/share/man/man1/translate.1.gz
+  /usr/share/man/man5/services.xml.5.gz
+
+(libtranslate-devel)
+  /usr/include/libtranslate/translate-common.h
+  /usr/include/libtranslate/translate-pair.h
+  /usr/include/libtranslate/translate-service.h
+  /usr/include/libtranslate/translate-session.h
+  /usr/include/libtranslate/translate-util.h
+  /usr/include/libtranslate/translate.h
+  /usr/lib/libtranslate.dll.a
+  /usr/lib/libtranslate.la
+  /usr/lib/pkgconfig/libtranslate.pc
+
+(libtranslate-doc)
+  /usr/share/gtk-doc/html/libtranslate/api-reference.html
+  /usr/share/gtk-doc/html/libtranslate/ch01s02.html
+  /usr/share/gtk-doc/html/libtranslate/ch02s02.html
+  /usr/share/gtk-doc/html/libtranslate/compiling-modules.html
+  /usr/share/gtk-doc/html/libtranslate/home.png
+  /usr/share/gtk-doc/html/libtranslate/index.html
+  /usr/share/gtk-doc/html/libtranslate/index.sgml
+  /usr/share/gtk-doc/html/libtranslate/ix01.html
+  /usr/share/gtk-doc/html/libtranslate/left.png
+  /usr/share/gtk-doc/html/libtranslate/libtranslate-translate-common.html
+  /usr/share/gtk-doc/html/libtranslate/libtranslate-translate-util.html
+  /usr/share/gtk-doc/html/libtranslate/libtranslate-translate.html
+  /usr/share/gtk-doc/html/libtranslate/libtranslate.devhelp
+  /usr/share/gtk-doc/html/libtranslate/libtranslate.devhelp2
+  /usr/share/gtk-doc/html/libtranslate/overview.html
+  /usr/share/gtk-doc/html/libtranslate/rfc3066-builtin.html
+  /usr/share/gtk-doc/html/libtranslate/right.png
+  /usr/share/gtk-doc/html/libtranslate/TranslatePair.html
+  /usr/share/gtk-doc/html/libtranslate/TranslateService.html
+  /usr/share/gtk-doc/html/libtranslate/TranslateSession.html
+  /usr/share/gtk-doc/html/libtranslate/tutorials.html
+  /usr/share/gtk-doc/html/libtranslate/up.png
+
+------------------
+
+Port Notes:
+
+----- version 0.99-2 -----
+Rebuilt with cygport for updated dependencies.
+
+----- version 0.99-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
