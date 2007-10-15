@@ -5,11 +5,12 @@ natural languages. Its modular infrastructure allows to implement new
 translation services separately from the core library.
 
 Runtime requirements:
-  cygwin-1.5.23-2
-  glib2-2.12.7-1
+  cygwin-1.5.24-2
+  glib2-2.12.13-1
   libintl8-0.15-1
-  libsoup22_8-2.2.99-1
+  libsoup22_8-2.2.100-1
   libtalkfilters1-2.3.6-1
+  libxml2-2.6.29-1
 
 Build requirements:
 (besides corresponding devel packages)
