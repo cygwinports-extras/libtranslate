@@ -1,5 +1,5 @@
 category: Text Gnome
-requires: cygwin glib2 libintl8 libsoup22_8 libtalkfilters1
+requires: cygwin glib2 libintl8 libsoup24 libtalkfilters1
 sdesc: "Text translation library (runtime)"
 ldesc: "libtranslate is a library for translating text and web pages between
 natural languages. Its modular infrastructure allows to implement new

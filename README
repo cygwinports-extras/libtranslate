@@ -5,24 +5,24 @@ natural languages. Its modular infrastructure allows to implement new
 translation services separately from the core library.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
+  cygwin-1.5.25-11
+  glib2-2.16.3-1
   libintl8-0.15-1
-  libsoup22_8-2.2.100-1
-  libtalkfilters1-2.3.6-1
-  libxml2-2.6.29-1
+  libsoup24-2.4.1-1
+  libtalkfilters1-2.3.8-1
+  libxml2-2.6.32-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.23-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
-  gawk-3.1.5-4
+  cygport-0.3.11-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.7-1
-  libtool1.5-1.5.23a-2
+  gnome-common-2.20.0-2
+  gtk-doc-1.10-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -46,7 +46,6 @@ This will create:
   /usr/src/libtranslate-0.99-X-src.tar.bz2
   /usr/src/libtranslate-0.99-X.tar.bz2
   /usr/src/libtranslate-devel-0.99-X.tar.bz2
-  /usr/src/libtranslate-doc-0.99-X.tar.bz2
 
 -------------------------------------------
 
@@ -59,7 +58,6 @@ Files included in the binary packages:
   /usr/lib/libtranslate/modules/generic.la
   /usr/lib/libtranslate/modules/talkfilters.dll
   /usr/lib/libtranslate/modules/talkfilters.la
-  /usr/share/doc/Cygwin/libtranslate-0.99.README
   /usr/share/doc/libtranslate-0.99/AUTHORS
   /usr/share/doc/libtranslate-0.99/COPYING
   /usr/share/doc/libtranslate-0.99/INSTALL
@@ -82,8 +80,6 @@ Files included in the binary packages:
   /usr/lib/libtranslate.dll.a
   /usr/lib/libtranslate.la
   /usr/lib/pkgconfig/libtranslate.pc
-
-(libtranslate-doc)
   /usr/share/gtk-doc/html/libtranslate/api-reference.html
   /usr/share/gtk-doc/html/libtranslate/ch01s02.html
   /usr/share/gtk-doc/html/libtranslate/ch02s02.html
@@ -110,6 +106,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.99-3 -----
+Rebuilt for libsoup-2.4.
 
 ----- version 0.99-2 -----
 Rebuilt with cygport for updated dependencies.

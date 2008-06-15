@@ -1,0 +1,21 @@
+inherit gnome2
+
+DESCRIPTION="GNOME natural language translator library"
+HOMEPAGE="http://www.nongnu.org/libtranslate/"
+SRC_URI="http://savannah.nongnu.org/download/${PN}/${P}.tar.gz
+         http://savannah.nongnu.org/download/${PN}/${P}.tar.gz.sig"
+PATCH_URI="
+	http://savannah.nongnu.org/download/${PN}/${P}-charsetparse.diff
+	http://savannah.nongnu.org/download/${PN}/${P}-condfix.diff
+	http://savannah.nongnu.org/download/${PN}/${P}-int64.diff
+	http://savannah.nongnu.org/download/${PN}/${P}-postmarker.diff
+	http://savannah.nongnu.org/download/${PN}/${P}-services.diff
+	http://savannah.nongnu.org/download/${PN}/${P}-libsoup24.diff
+"
+
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+PKG_CONTENTS[0]="--exclude=gtk-doc usr/bin/ usr/lib/${PN}/ usr/share/"
+PKG_CONTENTS[1]="usr/include/ usr/lib/${PN}.* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+
+CYGCONF_ARGS="--enable-generic --enable-talkfilters"
