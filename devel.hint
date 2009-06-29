@@ -1,5 +1,5 @@
 category: Text Gnome
-requires: cygwin libtranslate glib2-devel gettext
+requires: libtranslate glib2-devel gettext
 external-source: libtranslate
 sdesc: "Text translation library (development)"
 ldesc: "libtranslate is a library for translating text and web pages between
