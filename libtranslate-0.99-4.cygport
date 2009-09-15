@@ -11,11 +11,14 @@ PATCH_URI="
 	http://savannah.nongnu.org/download/${PN}/${P}-postmarker.diff
 	http://savannah.nongnu.org/download/${PN}/${P}-services.diff
 	http://savannah.nongnu.org/download/${PN}/${P}-libsoup24.diff
+	0.99-no-undefined.patch
 "
 
-PKG_NAMES="${PN} ${PN}-devel"
-PKG_HINTS="setup devel"
-PKG_CONTENTS[0]="--exclude=gtk-doc usr/bin/ usr/lib/${PN}/ usr/share/"
-PKG_CONTENTS[1]="usr/include/ usr/lib/${PN}.* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+PKG_NAMES="${PN} ${PN}0 ${PN}-devel translate"
+libtranslate0_CONTENTS="--exclude=gtk-doc --exclude=man1 usr/bin/cygtranslate-0.dll
+                        usr/lib/${PN}/ usr/share/"
+libtranslate_devel_CONTENTS="usr/include/ usr/lib/${PN}.* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+translate_CONTENTS="usr/bin/translate.exe usr/share/man/man1/"
 
+ACLOCAL_FLAGS="-I m4"
 CYGCONF_ARGS="--enable-generic --enable-talkfilters"

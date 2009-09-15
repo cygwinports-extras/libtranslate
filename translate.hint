@@ -1,0 +1,7 @@
+category: Text Gnome
+requires: libgcc1 libglib2.0_0 libintl8 libtranslate0
+external-source: libtranslate
+sdesc: "Text translation library (command-line interface)"
+ldesc: "libtranslate is a library for translating text and web pages between
+natural languages. Its modular infrastructure allows to implement new
+translation services separately from the core library."

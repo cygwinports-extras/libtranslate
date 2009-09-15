@@ -1,6 +1,7 @@
 category: Text Gnome
-requires: glib2 libintl8 libsoup24 libtalkfilters1
-sdesc: "Text translation library (runtime)"
+requires: libtranslate0 libglib2.0-devel gettext
+external-source: libtranslate
+sdesc: "Text translation library (development)"
 ldesc: "libtranslate is a library for translating text and web pages between
 natural languages. Its modular infrastructure allows to implement new
 translation services separately from the core library."
